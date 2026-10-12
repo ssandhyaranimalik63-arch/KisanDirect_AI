@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarmDirect - Farmer to Consumer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>🌾 FarmDirect</h1>
+    <p>Connecting Farmers Directly with Consumers</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#farmers">Farmers</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="home" class="hero">
+    <h2>From Farm to Your Home</h2>
+    <p>
+        Reduce intermediaries, increase farmer income,
+        and provide affordable prices to consumers.
+    </p>
+    <button onclick="showMessage()">Join FarmDirect</button>
+</section>
+
+<section id="farmers">
+    <h2>👨‍🌾 Farmer Registration</h2>
+
+    <form id="farmerForm">
+        <input type="text" id="farmerName" placeholder="Farmer Name" required>
+        <input type="text" id="location" placeholder="Location" required>
+        <input type="text" id="crop" placeholder="Crop/Product" required>
+        <input type="number" id="price" placeholder="Price per Kg" required>
+
+        <button type="submit">Register Farmer</button>
+    </form>
+
+    <p id="farmerResult"></p>
+</section>
+
+<section id="products">
+    <h2>🛒 Available Products</h2>
+
+    <div class="products">
+
+        <div class="card">
+            <h3>🍅 Tomato</h3>
+            <p>Farmer Price: ₹25/kg</p>
+            <button onclick="buyProduct('Tomato')">Buy</button>
+        </div>
+
+        <div class="card">
+            <h3>🥔 Potato</h3>
+            <p>Farmer Price: ₹20/kg</p>
+            <button onclick="buyProduct('Potato')">Buy</button>
+        </div>
+
+        <div class="card">
+            <h3>🌾 Rice</h3>
+            <p>Farmer Price: ₹45/kg</p>
+            <button onclick="buyProduct('Rice')">Buy</button>
+        </div>
+
+        <div class="card">
+            <h3>🥕 Carrot</h3>
+            <p>Farmer Price: ₹30/kg</p>
+            <button onclick="buyProduct('Carrot')">Buy</button>
+        </div>
+
+    </div>
+</section>
+
+<section class="benefits">
+    <h2>Why FarmDirect?</h2>
+
+    <div class="benefit-box">
+        <div>
+            <h3>👨‍🌾 Higher Farmer Income</h3>
+            <p>Farmers can sell directly to consumers.</p>
+        </div>
+
+        <div>
+            <h3>💰 Lower Consumer Price</h3>
+            <p>Fewer intermediaries reduce unnecessary costs.</p>
+        </div>
+
+        <div>
+            <h3>🤝 Direct Connection</h3>
+            <p>Farmers and consumers communicate directly.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>📞 Contact</h2>
+    <p>Email: farmdirect@example.com</p>
+    <p>Phone: +91 XXXXX XXXXX</p>
+</section>
+
+<footer>
+    <p>© 2026 FarmDirect | Supporting Indian Farmers 🌱</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
